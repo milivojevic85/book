@@ -19,14 +19,18 @@ class Movie
 		return $this->rating;
 	}
 	public function setRating($rating) {
-		return $this->rating = $rating;
+		if($rating == "G" || $rating == "PG" || $rating == "PG-13" || $rating == "R" || $rating == "NR") {
+			$this->rating = $rating;
+		} else {
+			$this->rating = "NR";
+		}
 	}
 }
 
 $avengers = new Movie("Avengers", "PG-13");
 // G, PG, PG-13, R, NR
-
-echo $avengers->setRating("Dog"); // Dog (anything what s in there)
+$avengers->setRating("Dog");
+echo $avengers->getRating(); // NR
 ?>
 </body>
 </html>
