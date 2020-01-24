@@ -24,6 +24,9 @@ class ItalianChef extends Chef
 	public function makePasta() {
 		echo "The chef makes pasta<br>";
 	}
+	public function makeSpecialDish() {
+		echo "The chef makes chicken parm<br>";
+	}
 }
 
 $chef = new Chef();
