@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Chef</title>
+</head>
+<body>
+<?php 
+class Chef
+{
+	public function makeChicken() {
+		echo "The chef makes chicken<br>";
+	}
+	public function makeSalad() {
+		echo "The chef makes salad<br>";
+	}
+	public function makeSpecialDish() {
+		echo "The chef makes bbq ribs<br>";
+	}
+}
+
+$chef = new Chef();
+$chef->makeChicken(); // The chef makes chicken
+
+?>
+</body>
+</html>
