@@ -27,10 +27,10 @@ class ItalianChef extends Chef
 }
 
 $chef = new Chef();
-$chef->makeChicken(); // The chef makes chicken
+$chef->makeSpecialDish(); // The chef makes bbq ribs
 
 $italianChef = new ItalianChef();
-$italianChef->makePasta(); // The chef makes pasta
+$italianChef->makeSpecialDish(); // The chef makes bbq ribs
 ?>
 </body>
 </html>
