@@ -19,9 +19,18 @@ class Chef
 	}
 }
 
+class ItalianChef extends Chef
+{
+	public function makePasta() {
+		echo "The chef makes pasta<br>";
+	}
+}
+
 $chef = new Chef();
 $chef->makeChicken(); // The chef makes chicken
 
+$italianChef = new ItalianChef();
+$italianChef->makePasta(); // The chef makes pasta
 ?>
 </body>
 </html>
