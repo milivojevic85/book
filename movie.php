@@ -29,8 +29,8 @@ class Movie
 
 $avengers = new Movie("Avengers", "Dog");
 // G, PG, PG-13, R, NR
-$avengers->setRating("nonsence");
-echo $avengers->getRating(); // NR
+$avengers->setRating("R");
+echo $avengers->getRating(); // R
 ?>
 </body>
 </html>
